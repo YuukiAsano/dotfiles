@@ -1,0 +1,71 @@
+" Plugin 読み込み開始
+filetype off
+set rtp+=~/.vim/vundle.git/
+call vundle#rc()
+
+" 補完
+Bundle 'AutoComplPop'
+
+" 補完 neocomplcache.vim : 究極のVim的補完環境
+Bundle 'Shougo/neocomplcache'
+
+" neocomplcacheのsinpet補完
+Bundle 'Shougo/neocomplcache-snippets-complete'
+
+" ファイラー
+Bundle 'Shougo/unite.vim'
+
+" Explorer
+Bundle 'Shougo/vimfiler'
+
+" NERD_Tree, taglist, srcexplの統合
+Bundle 'trinity.vim'
+
+" ソースコード上のメソッド宣言、変数宣言の一覧を表示
+Bundle 'taglist.vim'
+
+" tagsを利用したソースコード閲覧・移動補助機能 tagsファイルの自動生成
+Bundle 'Source-Explorer-srcexpl.vim'
+
+" XMLとかHTMLとかの編集機能を強化する
+Bundle 'xmledit'
+
+" Align : 高機能整形・桁揃えプラグイン
+Bundle 'Align'
+
+" 検索用
+Bundle 'grep.vim'
+
+" vim-ruby : VimでRubyを扱う際の最も基本的な拡張機能
+Bundle 'ruby.vim'
+
+" rails.vim
+Bundle 'tpope/vim-rails'
+Bundle 'rails.vim'
+
+" よくわかんね
+Bundle 'vim-ruby/vim-ruby'
+
+" rubyでrequire先を補完する
+Bundle 'ujihisa/neco-ruby'
+
+" ruby用のmatchit拡張
+Bundle 'ruby-matchit'
+
+" quick run for all
+Bundle 'thinca/vim-quickrun'
+
+" ステータスライン
+Bundle 'Lokaltog/vim-powerline'
+
+" ブラウザ起動
+Bundle 'tyru/open-browser.vim'
+
+" メモ取り用
+Bundle 'glidenote/memolist.vim'
+
+" 自動閉じタグ （自動挿入したあと、右を消した後左も自動削除される）
+" NeoBundle 'yuroyoro/vim-autoclose'
+
+" Plugin 読み込み終了
+filetype plugin indent on

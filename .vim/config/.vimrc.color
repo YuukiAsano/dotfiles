@@ -1,0 +1,22 @@
+"----------------------------------
+""色設定
+"----------------------------------
+""NerdTreeのdirectory
+hi Directory ctermfg=lightblue
+
+" color settings
+set t_Co=256
+
+" シンタックスハイライトを有効にする
+syntax enable
+
+" color scheme
+if has('gui_running')
+    set background=light
+else
+    set background=dark
+endif
+colorscheme advantage
+
+" 検索結果文字列のハイライトを有効にする
+set hlsearch
