@@ -87,4 +87,5 @@ alias viz="vim ~/.zshrc"
 export PATH="/usr/local/heroku/bin:/opt/boxen/homebrew/opt/llvm/bin:$PATH"
 
 ## prompt
-PROMPT="%{${fg[yellow]}%}٩(๑>◡<๑)۶%{${reset_color}%} "
+PROMPT="%F{green}[%~]%{${fg[yellow]}%}٩(๑>◡<๑)۶%{${reset_color}%} "
+RPROMPT=''
