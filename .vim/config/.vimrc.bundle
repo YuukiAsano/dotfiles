@@ -52,6 +52,8 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'ujihisa/unite-colorscheme' " A unite.vim plugin
 
+NeoBundle 'romanvbabenko/rails.vim'
+
 call neobundle#end()
 
 " Required:
