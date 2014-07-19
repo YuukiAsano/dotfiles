@@ -71,4 +71,7 @@ task :uninstall do
   DotfilesInstaller.uninstall
 end
 
+desc "Remove symlink and Create Symlink"
+task :update => [:uninstall, :install]
+
 task :default => :install
