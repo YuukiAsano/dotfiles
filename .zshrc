@@ -88,4 +88,10 @@ export PATH="/usr/local/heroku/bin:/opt/boxen/homebrew/opt/llvm/bin:$PATH"
 
 ## prompt
 PROMPT="%F{green}[%~]%{${fg[yellow]}%}٩(๑>◡<๑)۶%{${reset_color}%} "
-RPROMPT=''
+RPROMPT="%F{red}`get-branch-name`"
+setopt prompt_subst #表示毎にPROMPTで設定されている文字列を評価する
+
+function get-branch-name {
+    # gitディレクトリじゃない場合のエラーは捨てます
+    echo `git rev-parse --abbrev-ref HEAD 2> /dev/null`
+}
